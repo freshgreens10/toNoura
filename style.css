@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFD6E8; /* Soft pastel pink for the background */
+	font-family: 'Crimson Text', serif;
+	height: 100%;
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	margin: 20px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 36px; /* Larger, more romantic font size */
+	color: #E91E63; /* Deep romantic red for the heading */
+}
+
+.paint {
+	padding-top: 2px;
+}
+
+/* CANVAS STYLING */
+canvas {
+	background: #FFF;
+	display: block;
+	margin: 40px auto 10px;
+	border-radius: 10px; /* Increased border-radius for a softer look */
+	border: 2px solid #FFC0CB; /* Lighter pink border */
+	box-shadow: 0 4px 0 0 #FFC0CB; /* Softer shadow with a pink hue */
+	cursor: url(../img/cursor.png), crosshair;
+}
+
+/* CONTROLS (NEW COLOURS) */
+.controls {
+	min-height: 60px;
+	margin: 0 auto;
+	width: 600px;
+	border-radius: 10px; /* Increased border-radius for a softer look */
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	float: left;
+	padding: 10px 0 20px;
+	width: 100%;
+	text-align: center;
+}
+
+	ul li, #newColor {
+		display: block;
+		height: 64px; /* Slightly larger button height */
+		width: 64px; /* Slightly larger button width */
+		border-radius: 80px; /* More rounded buttons */
+		cursor: pointer;
+		border: 0;
+		box-shadow: 0 3px 0 0 #FFC0CB; /* Lighter pink shadow */
+	}
+
+	ul li {
+		display: inline-block;
+		margin: 0 5px 10px;
+	}
+
+.red {
+	background: #FF6B81; /* Deeper pink for the red button */
+}
+
+.blue {
+	background: #75B4FF; /* Lighter blue for the blue button */
+}
+
+.yellow {
+	background: #FFD700; /* Brighter yellow for the yellow button */
+}
+
+.selected {
+	border: 7px solid #E91E63; /* Deep romantic red for the selected button */
+	width: 50px; /* Slightly larger selected button */
+	height: 50px; /* Slightly larger selected button */
+}
+
+/* BUTTON STYLES */
+button {
+	background: #E91E63; /* Deep romantic red for buttons */
+	box-shadow: 0 3px 0 0 #FF6B81; /* Lighter pink shadow */
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-shadow: 0 1px #FF6B81; /* Lighter pink text shadow */
+	display: block;
+	font-size: 20px; /* Larger font size */
+	line-height: 48px; /* Adjusted line height */
+}
+
+#revealColorSelect {
+	border: none;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 5px 20px;
+	width: 160px;
+}
+
+#clear {
+	border: none;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 0 20px;
+	width: 160px;
+	height: 50px; /* Slightly taller clear button */
+}
+
+/* New Color Palette */
+#colorSelect {
+	background: #fff;
+	border-radius: 10px; /* Increased border-radius for a softer look */
+	clear: both;
+	margin: 20px auto 0;
+	padding: 20px;
+	width: 340px; /* Slightly wider color palette */
+	position: relative;
+	display: none;
+	border: 2px solid #FFC0CB; /* Lighter pink border */
+}
+
+	#colorSelect:after {
+		bottom: 100%;
+		left: 50%;
+		border: solid;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(255, 255, 255, 0);
+		border-bottom-color: #fff;
+		border-width: 10px;
+		margin-left: -10px;
+	}
+
+#newColor {
+	width: 100px; /* Wider color buttons */
+	height: 100px; /* Taller color buttons */
+	border-radius: 5px; /* Rounded corners for color buttons */
+	box-shadow: none;
+	float: left;
+	border: none;
+	margin: 10px 20px 20px 10px;
+}
+
+.sliders p {
+	margin: 8px 0;
+	vertical-align: middle;
+}
+
+.sliders label {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	width: 40px; /* Slightly narrower label width */
+	font-size: 16px; /* Smaller font size */
+	color: #E91E63; /* Deep romantic red for the label */
+}
+
+.sliders input {
+	position: relative;
+	top: 2px;
+}
+
+#colorSelect button {
+	border: none;
+	border-top: 1px solid #FF6B81; /* Lighter pink border-top */
+	border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+	clear: both;
+	margin: 10px -10px -7px;
+	padding: 5px 10px;
+	width: 360px; /* Wider button */
+}
